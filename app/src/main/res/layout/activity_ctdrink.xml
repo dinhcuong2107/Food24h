@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".CTDrinkActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="220dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="30dp"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/img_ctdrink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_namectdrink"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <EditText
+            android:id="@+id/edt_namectdrink"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_edt"
+            android:textColor="@color/black"
+            android:hint="Tên món ăn"
+            android:textColorHint="@color/C21"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pricectdrink"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <EditText
+                android:id="@+id/edt_price_ctdrink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_edt"
+                android:hint="Giá"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/C21" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:gravity="center"
+                android:text="VNĐ"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="40dp"
+                android:text="Số lượng"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/red_ctdrink"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_edt"
+                android:text="-"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/sl_ctdrink"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:text="0"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/inc_ctdrink"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_edt"
+                android:text="+"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rela_add_ctdrink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_motactdrink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linear_add_ctdrink"
+                android:layout_marginBottom="0dp"
+                android:gravity="bottom"
+                android:inputType="textMultiLine"
+                android:orientation="vertical"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold">
+
+                <TextView
+                    android:id="@+id/text_motactdrink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/textTTD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_200"/>
+
+                <Button
+                    android:id="@+id/time_ordctdrink"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/custom_edt"
+                    android:layout_height="45dp" />
+
+                <EditText
+                    android:id="@+id/edt_mapctdrink"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Địa chỉ"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edt"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/C21" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/mota_ctdrink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linear_add_ctdrink"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/custom_edt"
+                android:hint="Mô tả"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textColorHint="@color/C21" />
+            <LinearLayout
+                android:id="@+id/linear_add_ctdrink"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_fix_ctdrink"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_btn"
+                    android:text="Lưu"
+                    android:textColor="@color/black" />
+                <Button
+                    android:id="@+id/btn_buy_ctdrink"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_btn"
+                    android:text="Mua"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_bg_dialog"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/dialog_img"
+        android:layout_margin="5dp"
+        android:layout_width="230dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_height="180dp"/>
+    <Button
+        android:id="@+id/dialog_up_avt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:background="@drawable/custom_btn"
+        android:text="Cập nhật"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"></Button>
+
+</LinearLayout>

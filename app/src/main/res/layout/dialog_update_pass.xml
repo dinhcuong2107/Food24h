@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_bg_dialog"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/dialog_pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:hint="Mật khẩu hiện tại"
+        android:textColorHint="@color/C21"
+        android:background="@drawable/custom_edt"/>
+    <EditText
+        android:id="@+id/dialog_newpass"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint="mật khẩu mới"
+        android:textColorHint="@color/C21"
+        android:background="@drawable/custom_edt"/>
+    <EditText
+        android:id="@+id/dialog_againpass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:hint="Nhập lại mật khẩu"
+        android:textColorHint="@color/C21"
+        android:background="@drawable/custom_edt"/>
+    <Button
+        android:id="@+id/dialog_up_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:background="@drawable/custom_btn"
+        android:text="Cập nhật"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"></Button>
+
+</LinearLayout>

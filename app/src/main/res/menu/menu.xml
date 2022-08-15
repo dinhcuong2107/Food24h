@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_food"
+        android:icon="@drawable/ic_baseline_food_bank_24"
+        android:title="Đồ ăn" />
+    <item
+        android:id="@+id/menu_drink"
+        android:icon="@drawable/ic_baseline_local_drink_24"
+        android:title="nước uống" />
+    <item
+        android:id="@+id/menu_ord"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Giỏ hàng" />
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Cài đặt" />
+</menu>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CreatedAccActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#4CAF50"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"/>\
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Họ và Tên"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/custom_edt"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="13dp">
+        <RadioButton
+            android:id="@+id/user_boy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="     Nam"/>
+        <RadioButton
+            android:id="@+id/user_girl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="     Nữ"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/user_dob"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Ngày sinh"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/custom_edt"/>
+    <EditText
+        android:id="@+id/user_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Số điện thoại"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:inputType="number"
+        android:background="@drawable/custom_edt"/>
+    <EditText
+        android:id="@+id/user_pw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Mật khẩu"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:inputType="textPassword"
+        android:background="@drawable/custom_edt"/>
+    <EditText
+        android:id="@+id/user_pw_again"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập lại mật khẩu"
+        android:layout_margin="13dp"
+        android:inputType="textPassword"
+        android:background="@drawable/custom_edt"/>
+    <Button
+        android:id="@+id/user_created"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Đăng ký"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_btn"/>
+</LinearLayout>
